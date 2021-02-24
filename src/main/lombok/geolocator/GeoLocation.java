@@ -1,5 +1,9 @@
 package geolocator;
 
+/**
+ * Class for wrapping geolocation of and IP adress.
+ */
+
 @lombok.Data
 public class GeoLocation {
 
