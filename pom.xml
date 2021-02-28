@@ -45,12 +45,6 @@
 			<version>${jackson-databind.version}</version>
 			<scope>compile</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.18</version>
-			<scope>compile</scope>
-		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -66,19 +60,6 @@
 				<configuration>
 					<mainClass>${mainClass}</mainClass>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>lombok-maven-plugin</artifactId>
-				<version>1.18.16.0</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>delombok</goal>
-						</goals>
-						<phase>generate-sources</phase>
-					</execution>
-				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -161,7 +142,7 @@
 	<distributionManagement>
 		<site>
 			<id>shrek</id>
-			<url>scp://@shrek.unideb.hu:2222/home/davidcsirak/public_html/${project.artifactId}</url>
+			<url>scp://davidcsirak@shrek.unideb.hu:2222/home/davidcsirak/public_html/${project.artifactId}</url>
 		</site>
 	</distributionManagement>
 </project>
